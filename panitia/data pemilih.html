@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://code.iconify.design/iconify-icon/1.0.2/iconify-icon.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+</head>
+<style>
+    body{
+        background-color: #F5F5F5; font-family: "Times New Roman", Times, serif;
+    }
+    .flex-container{
+        display:flex;
+    }
+    .ultop {
+        list-style-type: none; margin: 0; padding: 0; overflow: hidden; background-color: #04AA6D; border-radius: 5px; border-top-right-radius: 10px; box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    }
+    .ultop img {
+        float: left; width: 50px; height:45px; border-radius: 5px; margin-top: 3px; margin-left: 3px; margin-bottom: 3px; box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    }
+    .judul{
+        float: left; margin-top: 5px; 
+    }
+    .namajudul {
+        letter-spacing: 2px; display: block; color: rgb(255, 255, 255); text-align: center; padding: 6px 15px;  font-size: 25px; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+    .user {
+        float: right;
+    }
+    .namauser{
+        font-weight: bold; display: block; color: white; text-align: center; padding: 14px 10px; text-decoration: none; 
+    }
+    .logouser{
+        color: white; float: right; margin-right: 10px; margin-top: 13px; font-size: 1.3em;
+    }
+    .side {
+        height: 90%; float: left;  margin-top: 3px; height: 595px; width: 175px; border-radius: 5px; background-color: #04AA6D; box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    }
+    .menu {
+        text-decoration: none; list-style-type: none; color: white; margin: 0; padding: 0; display: block;
+    }
+    .menu li a{
+        padding: 9px 10px; margin-top: 10px; color: white; font-size: 20px; font-weight: 500;
+    }
+    li a.menu:hover {
+        background-color:  white; border-radius: 5px; color: #04AA6D; font-size: 18px; font-weight: bold; box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    }
+    
+    /* data pemilih */
+.content{
+    background-color: white; height: 515px; width: 1100px; margin-left: 15%;  margin-top: 10px; border-radius: 5px; padding: 5px; box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  }
+  header {
+    font-size: 28px; margin-left: 15%; margin-top: 30px; letter-spacing: 1.5px; font-weight: bold;
+  }
+  .search {
+    height: 30px; width: 250px; margin-top: 10px; margin-left: 10px; border-radius: 5px; padding-left: 5px;
+  }
+  .btn-search {
+    height: 36px; width: 50px; background-color: #04AA6D; border: none; border-radius: 5px; color: white; opacity: 0.9; box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px; opacity: 0.9;
+  }
+  .btn-search:hover {
+    font-weight: bold; opacity: 1;
+  }
+  .pemilih {
+    margin-left: auto; margin-right: auto; font-family: Arial, Helvetica, sans-serif; border-collapse: collapse; width: 1080px; height: 40px;  border-collapse: collapse; padding-left: 5px; font-size: 15px; margin-top: 10px;
+  }
+  .pemilih tr:nth-child(even){background-color: #f2f2f2;}
+  .pemilih th {
+     text-align: center; background-color: #04AA6D; color: white;
+  }
+  .tabel th {
+    font-size: 17px;
+  }
+  .pemilih td, .pemilih th {
+    border: 1px solid black; padding: 8px; text-align: center;
+  }
+  #popup {
+    width: 100%; height: 120%; position: fixed; background: rgba(0,0,0,.7); top: 0; left: 0; z-index: 9999; visibility: hidden;
+}
+.windowhapus {
+     width: 500px; height: 100px; background: #fff; border-radius: 5px; position: relative; padding: 5px; text-align: center; margin-top: 9.7%; margin-left: 39%;
+}
+.windowhapus h1{
+    font-size: 20px; margin-top: 20px;
+}
+.btn-cancel{
+  border: none; margin-left: 50px; width: 75px; height: 30px; background-color: red; border-radius: 5px; color: white; box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px; opacity: 0.9;
+}
+.btn-cancel:hover {
+  font-weight: bold; opacity: 1;
+}
+.btn{
+   border: none; width: 75px; height: 30px; background-color: #1cb2c6; border-radius: 5px; color: white; box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px; opacity: 0.9;
+}
+.btn:hover{
+  font-weight: bold; opacity: 1;
+}
+#popup:target {
+    visibility: visible;
+}
+
+</style>
+<body>
+    <div>
+        <div>
+            <ul class="ultop">
+                <img src="./../img/inf1.jpg" alt="">
+                <li class="judul"><a class="namajudul">INF-VOTE</a></li>
+                <li class="logouser"><i class='fa fa-user-circle'></i></li>
+                <li class="user"><a href="#" class="namauser">Rifqi Febrian</a></li>
+            </ul>
+        </div>
+        <div class="side">
+            <ul class="menu">
+                <li><a class="menu" href="./dashboard copy.html"><i class="fa fa-home" style="padding-left: 5px; font-size: 1.1em; "></i>
+                Dashboard</a></li>
+                <li><a class="menu" href="./data kandidat.html"><i class='fa fa-user' style="padding-left: 5px; font-size: 1.1em;"></i>
+                Data Kandidat</a></li>
+                <li><a class="menu" href="./data pemilih.html"><i  class='fa fa-group' style="padding-left: 5px; font-size: 1em;"></i>
+                Data Pemilih</a></li>
+                <li><a class="menu" href="./laporan.html"><i class='fa fa-calendar-check-o' style="padding-left: 5px; font-size: 1 em;"></i>
+                Kotak Suara</a></li>
+                <li><a class="menu" href="./../acount/login copy.html"><i class='fa fa-sign-out' style="padding-left: 5px; font-size: 1.1em;"></i>
+                Logout</a></li>
+            </ul>
+        </div>
+        <div>
+            <!--  -->
+            <div>
+                <header>Data Pemilih</header>
+                <div class="content">
+                  <div class="search-container">
+                    <form action="/">
+                      <input type="text" class="search" placeholder="Cari Pemilih" name="search">
+                      <button class="btn-search" type="submit">Cari</button>
+                    </form>
+                  </div>
+                  <table class="pemilih">
+                    <thead>
+                      <tr class="tabel">
+                        <th>No</th>
+                        <th>Daftar Pemilih</th>
+                        <th>NIM</th>
+                        <th>Status Voting</th>
+                        <th>Action</th>
+                      </tr>
+                      <tr>
+                        <td>1</td>
+                        <td>Siti Aminah</td>
+                        <td>201111108</td>
+                        <td>
+                          <i class="fa fa-window-close" style="font-size: 20px; color: red;"></i>
+                        </td>
+                        <td>
+                          <a href="./edit pemilih.html"><i class='fa fa-edit' style="margin-right: 10px; font-size: 16px; color: #1C84C6;"></i></a>
+                          <a href="#popup"><i class='fa fa-trash' style="margin-left: 10px; color: red;"></i></a>
+                              <div id="popup">
+                                  <div class="windowhapus">
+                                      <h1>Apa anda ingin menghapusnya?</h1>
+                                          <a href="./data pemilih.html"><button class="btn">Iya</button></a>
+                                          <a href="./data pemilih.html"><button class="btn-cancel">Tidak</button></a>
+                                  </div>
+                              </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>2</td>
+                        <td>Abdulloh</td>
+                        <td>201111109</td>
+                        <td>
+                          <i class="fa fa-check-square" style="font-size: 20px; color: #04AA6D;"></i>
+                        </td>
+                        <td>
+                          <a href="./edit pemilih.html"><i class='fa fa-edit' style="margin-right: 10px; font-size: 16px; color: #1C84C6;"></i></a>
+                          <a href="#popup"><i class='fa fa-trash' style="margin-left: 10px; color: red;"></i></a>
+                              <div id="popup">
+                                  <div class="windowhapus">
+                                      <h1>Apa anda ingin menghapusnya?</h1>
+                                          <a href="./data pemilih.html"><button class="btn">Iya</button></a>
+                                          <a href="./data pemilih.html"><button class="btn-cancel">Tidak</button></a>
+                                  </div>
+                              </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>3</td>
+                        <td>Amin Ma'ruf</td>
+                        <td>201111110</td>
+                        <td>
+                          <i class="fa fa-check-square" style="font-size: 20px; color: #04AA6D;"></i>
+                        </td>
+                        <td>
+                          <a href="./edit pemilih.html"><i class='fa fa-edit' style="margin-right: 10px; font-size: 16px; color: #1C84C6;"></i></a>
+                          <a href="#popup"><i class='fa fa-trash' style="margin-left: 10px; color: red;"></i></a>
+                              <div id="popup">
+                                  <div class="windowhapus">
+                                      <h1>Apa anda ingin menghapusnya?</h1>
+                                          <a href="./data pemilih.html"><button class="btn">Iya</button></a>
+                                          <a href="./data pemilih.html"><button class="btn-cancel">Tidak</button></a>
+                                  </div>
+                              </div>
+                        </td>
+                      </tr>
+                      
+                    </thead>
+                  </table>
+                </div>
+              </div>
+
+        </div>
+    </div>
+</body>
+</html>
