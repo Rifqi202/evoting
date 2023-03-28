@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -12,104 +13,241 @@
     <!-- <link rel="stylesheet" href="style.css"> -->
 </head>
 <style>
-    body{
-        background-color: #F5F5F5; font-family: "Times New Roman", Times, serif;
+    body {
+        background-color: #F5F5F5;
+        font-family: "Times New Roman", Times, serif;
     }
-    .flex-container{
-        display:flex;
+
+    .flex-container {
+        display: flex;
     }
+
     .ultop {
-        list-style-type: none; margin: 0; padding: 0; overflow: hidden; background-color: #04AA6D; border-radius: 5px; border-top-right-radius: 10px; box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: #04AA6D;
+        border-radius: 5px;
+        border-top-right-radius: 10px;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     }
+
     .ultop img {
-        float: left; width: 50px; height:45px; border-radius: 5px; margin-top: 3px; margin-left: 3px; margin-bottom: 3px; box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        float: left;
+        width: 50px;
+        height: 45px;
+        border-radius: 5px;
+        margin-top: 3px;
+        margin-left: 3px;
+        margin-bottom: 3px;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     }
-    .judul{
-        float: left; margin-top: 5px; 
+
+    .judul {
+        float: left;
+        margin-top: 5px;
     }
+
     .namajudul {
-        letter-spacing: 2px; display: block; color: rgb(255, 255, 255); text-align: center; padding: 6px 15px;  font-size: 25px; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        letter-spacing: 2px;
+        display: block;
+        color: rgb(255, 255, 255);
+        text-align: center;
+        padding: 6px 15px;
+        font-size: 25px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     }
+
     .user {
         float: right;
     }
-    .namauser{
-        font-weight: bold; display: block; color: white; text-align: center; padding: 14px 10px; text-decoration: none; 
+
+    .namauser {
+        font-weight: bold;
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 10px;
+        text-decoration: none;
     }
-    .logouser{
-        color: white; float: right; margin-right: 10px; margin-top: 13px; font-size: 1.3em;
+
+    .logouser {
+        color: white;
+        float: right;
+        margin-right: 10px;
+        margin-top: 13px;
+        font-size: 1.3em;
     }
+
     .side {
-        height: 90%; float: left;  margin-top: 3px; height: 595px; width: 175px; border-radius: 5px; background-color: #04AA6D; box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+        height: 90%;
+        float: left;
+        margin-top: 3px;
+        height: 595px;
+        width: 175px;
+        border-radius: 5px;
+        background-color: #04AA6D;
+        box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
     }
+
     .menu {
-        text-decoration: none; list-style-type: none; color: white; margin: 0; padding: 0; display: block;
+        text-decoration: none;
+        list-style-type: none;
+        color: white;
+        margin: 0;
+        padding: 0;
+        display: block;
     }
-    .menu li a{
-        padding: 9px 10px; margin-top: 10px; color: white; font-size: 20px; font-weight: 500;
+
+    .menu li a {
+        padding: 9px 10px;
+        margin-top: 10px;
+        color: white;
+        font-size: 20px;
+        font-weight: 500;
     }
+
     li a.menu:hover {
-        background-color:  white; border-radius: 5px; color: #04AA6D; font-size: 18px; font-weight: bold; box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+        background-color: white;
+        border-radius: 5px;
+        color: #04AA6D;
+        font-size: 18px;
+        font-weight: bold;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
     }
+
     /* laporan */
-.content{
-    background-color: white; height: 500px; width: 1100px; margin-left: 15%; border-radius: 5px; box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
-}
-header {
-    font-size: 28px; margin-left: 15%; margin-top: 30px; letter-spacing: 1.5px; font-weight: bold;
-}
-.judulcontent {
-    background-color: white; list-style: none; width: 1100px; height:  30px; margin-top: 20px; box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px; border-radius: 5px; font-weight: bold;
-}
-.judulcontent li{
-    padding: 6px 10px;
-}
-.flex-container {
-    text-align: center;  margin-top: 20px;
-}
-.boxkandidat1 {
-    margin-right: 150px; margin-left: auto ;
-}
-.boxkandidat3 {
-    margin-left: 150px; margin-right: auto;
-}
-.nourut {
-    font-size: 20px; list-style-type: none; font-weight: bold;
-}
-.boxfoto {
-    background-color: #FFFFFF; width: 250px; height: 230px; border-radius: 5px; margin-top: 5px; box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px; 
-}
-.fotopaslon {
-    padding-top: 10px; margin-top: 10px;
-}
-img {
-    width: 120px; height: 160px; 
-}
-h5{
-    font-size: large; margin-top: 10px; 
-}
-.boxvote {
-    background-color: #FFFFFF; width: 250px; height: 55px; border-radius: 5px; margin-top: 3px; box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
-}
-.boxvote li{
-    list-style-type: none; padding: 2px; 
-}
-.boxdata {
-    border-radius: 5px;  margin-left: 25px; width: 250px; height: 100px; background-color: #FFFFFF; box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
-}
-table{
-    line-height: 25px; margin-top: 10px; margin-left: 25px;
-}
-table td {
-    text-indent: 50px; font-weight: bold;
-}
-.btn-laporan {
-    margin-left: 2%; width: 140px; height: 30px; margin-top: 68px; border-radius: 5px; background-color: #ddd; border: none; box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset; opacity: 0.9;
-}
-.btn-laporan:hover {
-    background-color: #04AA6D; font-weight: bold; color: white;
-}
+    .content {
+        background-color: white;
+        height: 500px;
+        width: 1100px;
+        margin-left: 15%;
+        border-radius: 5px;
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    }
+
+    header {
+        font-size: 28px;
+        margin-left: 15%;
+        margin-top: 30px;
+        letter-spacing: 1.5px;
+        font-weight: bold;
+    }
+
+    .judulcontent {
+        background-color: white;
+        list-style: none;
+        width: 1100px;
+        height: 30px;
+        margin-top: 20px;
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+        border-radius: 5px;
+        font-weight: bold;
+    }
+
+    .judulcontent li {
+        padding: 6px 10px;
+    }
+
+    .flex-container {
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .boxkandidat1 {
+        margin-right: 150px;
+        margin-left: auto;
+    }
+
+    .boxkandidat3 {
+        margin-left: 150px;
+        margin-right: auto;
+    }
+
+    .nourut {
+        font-size: 20px;
+        list-style-type: none;
+        font-weight: bold;
+    }
+
+    .boxfoto {
+        background-color: #FFFFFF;
+        width: 250px;
+        height: 230px;
+        border-radius: 5px;
+        margin-top: 5px;
+        box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+    }
+
+    .fotopaslon {
+        padding-top: 10px;
+        margin-top: 10px;
+    }
+
+    img {
+        width: 120px;
+        height: 160px;
+    }
+
+    h5 {
+        font-size: large;
+        margin-top: 10px;
+    }
+
+    .boxvote {
+        background-color: #FFFFFF;
+        width: 250px;
+        height: 55px;
+        border-radius: 5px;
+        margin-top: 3px;
+        box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+    }
+
+    .boxvote li {
+        list-style-type: none;
+        padding: 2px;
+    }
+
+    .boxdata {
+        border-radius: 5px;
+        margin-left: 25px;
+        width: 250px;
+        height: 100px;
+        background-color: #FFFFFF;
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    }
+
+    table {
+        line-height: 25px;
+        margin-top: 10px;
+        margin-left: 25px;
+    }
+
+    table td {
+        text-indent: 50px;
+        font-weight: bold;
+    }
+
+    .btn-laporan {
+        margin-left: 2%;
+        width: 140px;
+        height: 30px;
+        margin-top: 68px;
+        border-radius: 5px;
+        background-color: #ddd;
+        border: none;
+        box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+        opacity: 0.9;
+    }
+
+    .btn-laporan:hover {
+        background-color: #04AA6D;
+        font-weight: bold;
+        color: white;
+    }
 </style>
+
 <body>
     <div>
         <div>
@@ -122,16 +260,21 @@ table td {
         </div>
         <div class="side">
             <ul class="menu">
-                <li><a class="menu" href="./dashboard copy.html"><i class="fa fa-home" style="padding-left: 5px; font-size: 1.1em; "></i>
-                Dashboard</a></li>
-                <li><a class="menu" href="./data kandidat.html"><i class='fa fa-user' style="padding-left: 5px; font-size: 1.1em;"></i>
-                Data Kandidat</a></li>
-                <li><a class="menu" href="./data pemilih.html"><i  class='fa fa-group' style="padding-left: 5px; font-size: 1em;"></i>
-                Data Pemilih</a></li>
-                <li><a class="menu" href="./laporan.html"><i class='fa fa-calendar-check-o' style="padding-left: 5px; font-size: 1 em;"></i>
-                Kotak Suara</a></li>
-                <li><a class="menu" href="/evoting/index.html"><i class='fa fa-sign-out' style="padding-left: 5px; font-size: 1.1em;"></i>
-                Logout</a></li>
+                <li><a class="menu" href="./dashboard copy.html"><i class="fa fa-home"
+                            style="padding-left: 5px; font-size: 1.1em; "></i>
+                        Dashboard</a></li>
+                <li><a class="menu" href="./data kandidat.html"><i class='fa fa-user'
+                            style="padding-left: 5px; font-size: 1.1em;"></i>
+                        Data Kandidat</a></li>
+                <li><a class="menu" href="./data pemilih.html"><i class='fa fa-group'
+                            style="padding-left: 5px; font-size: 1em;"></i>
+                        Data Pemilih</a></li>
+                <li><a class="menu" href="./laporan.html"><i class='fa fa-calendar-check-o'
+                            style="padding-left: 5px; font-size: 1 em;"></i>
+                        Kotak Suara</a></li>
+                <li><a class="menu" href="/evoting/index.html"><i class='fa fa-sign-out'
+                            style="padding-left: 5px; font-size: 1.1em;"></i>
+                        Logout</a></li>
             </ul>
         </div>
         <div>
@@ -194,7 +337,8 @@ table td {
                                 </tr>
                             </table>
                         </div>
-                        <button class="btn-laporan">Cetak Laporan <i class="fa fa-print" style="font-size: 1.3em; padding-left: 3px;"></i></button>
+                        <button class="btn-laporan">Cetak Laporan <i class="fa fa-print"
+                                style="font-size: 1.3em; padding-left: 3px;"></i></button>
                     </div>
                 </div>
             </div>
@@ -202,4 +346,5 @@ table td {
         </div>
     </div>
 </body>
+
 </html>

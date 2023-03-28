@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,83 +12,195 @@
     <title>Document</title>
     <!-- <link rel="stylesheet" href="style.css"> -->
 </head>
+
 <body>
     <style>
-        body{
-            background-color: #F5F5F5; font-family: "Times New Roman", Times, serif;
+        body {
+            background-color: #F5F5F5;
+            font-family: "Times New Roman", Times, serif;
         }
-        .flex-container{
-            display:flex;
+
+        .flex-container {
+            display: flex;
         }
+
         .ultop {
-            list-style-type: none; margin: 0; padding: 0; overflow: hidden; background-color: #04AA6D; border-radius: 5px; border-top-right-radius: 10px; box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #04AA6D;
+            border-radius: 5px;
+            border-top-right-radius: 10px;
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
         }
+
         .ultop img {
-            float: left; width: 50px; height:45px; border-radius: 5px; margin-top: 3px; margin-left: 3px; margin-bottom: 3px; box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+            float: left;
+            width: 50px;
+            height: 45px;
+            border-radius: 5px;
+            margin-top: 3px;
+            margin-left: 3px;
+            margin-bottom: 3px;
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
         }
-        .judul{
-            float: left; margin-top: 5px; 
+
+        .judul {
+            float: left;
+            margin-top: 5px;
         }
+
         .namajudul {
-            letter-spacing: 2px; display: block; color: rgb(255, 255, 255); text-align: center; padding: 6px 15px;  font-size: 25px; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            letter-spacing: 2px;
+            display: block;
+            color: rgb(255, 255, 255);
+            text-align: center;
+            padding: 6px 15px;
+            font-size: 25px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
         }
+
         .user {
             float: right;
         }
-        .namauser{
-            font-weight: bold; display: block; color: white; text-align: center; padding: 14px 10px; text-decoration: none; 
+
+        .namauser {
+            font-weight: bold;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 10px;
+            text-decoration: none;
         }
-        .logouser{
-            color: white; float: right; margin-right: 10px; margin-top: 13px; font-size: 1.3em;
+
+        .logouser {
+            color: white;
+            float: right;
+            margin-right: 10px;
+            margin-top: 13px;
+            font-size: 1.3em;
         }
+
         .side {
-            height: 90%; float: left;  margin-top: 3px; height: 595px; width: 175px; border-radius: 5px; background-color: #04AA6D; box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+            height: 90%;
+            float: left;
+            margin-top: 3px;
+            height: 595px;
+            width: 175px;
+            border-radius: 5px;
+            background-color: #04AA6D;
+            box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
         }
+
         .menu {
-            text-decoration: none; list-style-type: none; color: white; margin: 0; padding: 0; display: block;
+            text-decoration: none;
+            list-style-type: none;
+            color: white;
+            margin: 0;
+            padding: 0;
+            display: block;
         }
-        .menu li a{
-            padding: 9px 10px; margin-top: 10px; color: white; font-size: 20px; font-weight: 500;
+
+        .menu li a {
+            padding: 9px 10px;
+            margin-top: 10px;
+            color: white;
+            font-size: 20px;
+            font-weight: 500;
         }
+
         li a.menu:hover {
-            background-color:  white; border-radius: 5px; color: #04AA6D; font-size: 18px; font-weight: bold; box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+            background-color: white;
+            border-radius: 5px;
+            color: #04AA6D;
+            font-size: 18px;
+            font-weight: bold;
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
         }
+
         /*tambah kandidat*/
-        .content{
-            background-color: white; height: 500px; width: 1100px; margin-left: 15%; border-radius: 10px; box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+        .content {
+            background-color: white;
+            height: 500px;
+            width: 1100px;
+            margin-left: 15%;
+            border-radius: 10px;
+            box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
         }
+
         header {
-            font-size: 28px; margin-left: 15%; margin-top: 30px; letter-spacing: 1.5px; font-weight: bold;
+            font-size: 28px;
+            margin-left: 15%;
+            margin-top: 30px;
+            letter-spacing: 1.5px;
+            font-weight: bold;
         }
+
         .namatabel {
-            background-color: white; list-style: none; width: 1100px; height:  30px; margin-top: 20px;box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset; border-radius: 5px; font-weight: bold;
+            background-color: white;
+            list-style: none;
+            width: 1100px;
+            height: 30px;
+            margin-top: 20px;
+            box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
+            border-radius: 5px;
+            font-weight: bold;
         }
+
         .namatabel li {
             padding: 5px 10px;
         }
+
         .tambahkandidat {
             margin-left: 10px;
         }
+
         .tambahkandidat th {
-            float: left; margin-top: 20px; 
+            float: left;
+            margin-top: 20px;
         }
-        .tambahkandidat input{
+
+        .tambahkandidat input {
             margin-left: 200px;
         }
+
         .simpan {
-            float: right; margin-top: 30px; margin-right: 30px; border: none; width: 85px; height:30px;border-radius:5px; background-color:#1cb2c6; font-size:15px; color:white; opacity: 0.9;
+            float: right;
+            margin-top: 30px;
+            margin-right: 30px;
+            border: none;
+            width: 85px;
+            height: 30px;
+            border-radius: 5px;
+            background-color: #1cb2c6;
+            font-size: 15px;
+            color: white;
+            opacity: 0.9;
         }
-        .kembali{
-           float: right; margin-top: 30px; margin-right: 100px;border: none; width: 85px; height:30px;border-radius:5px; background-color: #DE8500; font-size:15px; opacity: 0.9;
+
+        .kembali {
+            float: right;
+            margin-top: 30px;
+            margin-right: 100px;
+            border: none;
+            width: 85px;
+            height: 30px;
+            border-radius: 5px;
+            background-color: #DE8500;
+            font-size: 15px;
+            opacity: 0.9;
         }
-        button a{
-            text-decoration: none; color: white;
+
+        button a {
+            text-decoration: none;
+            color: white;
         }
+
         button:hover {
-            font-weight: bold; opacity: 1;
+            font-weight: bold;
+            opacity: 1;
         }
-        
-        
     </style>
     <div>
         <div>
@@ -100,16 +213,21 @@
         </div>
         <div class="side">
             <ul class="menu">
-                <li><a class="menu" href="./dashboard copy.html"><i class="fa fa-home" style="padding-left: 5px; font-size: 1.1em; "></i>
-                Dashboard</a></li>
-                <li><a class="menu" href="./data kandidat.html"><i class='fa fa-user' style="padding-left: 5px; font-size: 1.1em;"></i>
-                Data Kandidat</a></li>
-                <li><a class="menu" href="./data pemilih.html"><i  class='fa fa-group' style="padding-left: 5px; font-size: 1em;"></i>
-                Data Pemilih</a></li>
-                <li><a class="menu" href="./laporan.html"><i class='fa fa-calendar-check-o' style="padding-left: 5px; font-size: 1 em;"></i>
-                Kotak Suara</a></li>
-                <li><a class="menu" href="/evoting/index.html"><i class='fa fa-sign-out' style="padding-left: 5px; font-size: 1.1em;"></i>
-                Logout</a></li>
+                <li><a class="menu" href="./dashboard copy.html"><i class="fa fa-home"
+                            style="padding-left: 5px; font-size: 1.1em; "></i>
+                        Dashboard</a></li>
+                <li><a class="menu" href="./data kandidat.html"><i class='fa fa-user'
+                            style="padding-left: 5px; font-size: 1.1em;"></i>
+                        Data Kandidat</a></li>
+                <li><a class="menu" href="./data pemilih.html"><i class='fa fa-group'
+                            style="padding-left: 5px; font-size: 1em;"></i>
+                        Data Pemilih</a></li>
+                <li><a class="menu" href="./laporan.html"><i class='fa fa-calendar-check-o'
+                            style="padding-left: 5px; font-size: 1 em;"></i>
+                        Kotak Suara</a></li>
+                <li><a class="menu" href="/evoting/index.html"><i class='fa fa-sign-out'
+                            style="padding-left: 5px; font-size: 1.1em;"></i>
+                        Logout</a></li>
             </ul>
         </div>
         <div>
@@ -117,40 +235,48 @@
             <div>
                 <header>Data Kandidat</header>
                 <div class="content">
-                    <div class="namatabel"><li>Tambah Data Kandidat</li></div>
+                    <div class="namatabel">
+                        <li>Tambah Data Kandidat</li>
+                    </div>
                     <form method="POST" action="">
                         <table class="tambahkandidat">
                             <tr>
                                 <th>No.Urut</th>
-                                <td><input type="number" id="Nourut" name="Nourut" style="margin-top:15px; height: 25px; width:200px; text-align: left; border-radius: 5px; border: 1px solid black;">
+                                <td><input type="number" id="Nourut" name="Nourut"
+                                        style="margin-top:15px; height: 25px; width:200px; text-align: left; border-radius: 5px; border: 1px solid black;">
                                 </td>
                             </tr>
                             <tr>
                                 <th>Nama Lengkap</th>
-                                <td><input type="text" id="namalengkap" name="namalengkap" style="margin-top:15px; height: 25px; width:550px; text-align: left; border-radius: 5px; border: 1px solid black;">
+                                <td><input type="text" id="namalengkap" name="namalengkap"
+                                        style="margin-top:15px; height: 25px; width:550px; text-align: left; border-radius: 5px; border: 1px solid black;">
                                 </td>
                             </tr>
-                        <tr>
-                            <th> NIM </th>
-                            <td> <input type="number" id="NIM" name="NIM" style="margin-top:15px; height: 25px; width:200px; text-align: left; border-radius: 5px; border: 1px solid black;">
-                            </td>
-                        </tr>
-                        <tr>
-                            <th>Foto</th>
-                            <td> <input type="file" id="myFile" name="filename" style="margin-top: 20px;"></td>
-                        </tr>
-                        <tr>
-                            <th style="margin-top: 40px;"> Visi </th>
-                            <td> <input type="text" id="Visi" name="Visi" style="margin-top:15px; height: 75px; width:550px; text-align: left; border-radius: 5px; border: 1px solid black;">
-                            </td>
-                        </tr>
-                        <tr>
-                            <th style="margin-top: 40px;"> Misi </th>
-                            <td> <input type="text" id="Misi" name="Misi" style="margin-top:15px; height: 75px; width:550px; text-align: left; border-radius: 5px; border: 1px solid black;">
-                            </td>
+                            <tr>
+                                <th> NIM </th>
+                                <td> <input type="number" id="NIM" name="NIM"
+                                        style="margin-top:15px; height: 25px; width:200px; text-align: left; border-radius: 5px; border: 1px solid black;">
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>Foto</th>
+                                <td> <input type="file" id="myFile" name="filename" style="margin-top: 20px;"></td>
+                            </tr>
+                            <tr>
+                                <th style="margin-top: 40px;"> Visi </th>
+                                <td> <input type="text" id="Visi" name="Visi"
+                                        style="margin-top:15px; height: 75px; width:550px; text-align: left; border-radius: 5px; border: 1px solid black;">
+                                </td>
+                            </tr>
+                            <tr>
+                                <th style="margin-top: 40px;"> Misi </th>
+                                <td> <input type="text" id="Misi" name="Misi"
+                                        style="margin-top:15px; height: 75px; width:550px; text-align: left; border-radius: 5px; border: 1px solid black;">
+                                </td>
                         </table>
                         <button class="kembali"><a href="./data kandidat.html"> Kembali </a></button>
-                        <button class="simpan" type="submit" name="submit"> <a href="./data kandidat.html"> Simpan </a></button>
+                        <button class="simpan" type="submit" name="submit"> <a href="./data kandidat.html"> Simpan
+                            </a></button>
                     </form>
                 </div>
             </div>
@@ -158,4 +284,5 @@
         </div>
     </div>
 </body>
+
 </html>
